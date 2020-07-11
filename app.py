@@ -72,6 +72,11 @@ def predict():
     #positive=format(positive,'0.2f')
     #negative=format(negative,'0.2f')
     #neutral=format(neutral,'0.2f')
+    
+    res = dict();  
+    res['Positive'] = positive
+    res['Negative']   = negative
+    res['Neutral']   = neutral
 
     '''
         Check the polarity of the Topic
@@ -85,10 +90,7 @@ def predict():
     '''
         Now Return the output to the Front end
     '''
-    return render_template('index.html', prediction_text1='Positive Tweets : {}'.format(positive))
-    return render_template('index.html', prediction_text2='Negative Tweets: {}'.format(negative))
-    return render_template('index.html', prediction_text3='Neutral Tweets: {}'.format(neutral))
-
+    return render_template('index.html', prediction_text='Overall Result : {}'.format(res))
 
 if __name__ == "__main__":
     app.run(debug=True)
