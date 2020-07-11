@@ -85,9 +85,9 @@ def predict():
     '''
         Now Return the output to the Front end
     '''
-    return render_template('index.html', prediction_text='Positive Tweets : {}'.format(positive))
-    return render_template('index.html', prediction_text='Negative Tweets: {}'.format(negative))
-    return render_template('index.html', prediction_text='Neutral Tweets: {}'.format(neutral))
+    return render_template('index.html', prediction_text1='Positive Tweets : {}'.format(positive))
+    return render_template('index.html', prediction_text2='Negative Tweets: {}'.format(negative))
+    return render_template('index.html', prediction_text3='Neutral Tweets: {}'.format(neutral))
 
 
 if __name__ == "__main__":
