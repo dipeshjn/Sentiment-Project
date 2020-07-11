@@ -64,14 +64,14 @@ def predict():
         negative+=1
       elif(analysis.sentiment.polarity > 0):
         positive+=1
-    positive=percentage(positive, noOfSearchTerms)
-    negative=percentage(negative, noOfSearchTerms)
-    neutral=percentage(neutral, noOfSearchTerms)
+    #positive=percentage(positive, noOfSearchTerms)
+    #negative=percentage(negative, noOfSearchTerms)
+    #neutral=percentage(neutral, noOfSearchTerms)
     polarity=percentage(polarity,noOfSearchTerms)
 
-    positive=format(positive,'0.2f')
-    negative=format(negative,'0.2f')
-    neutral=format(neutral,'0.2f')
+    #positive=format(positive,'0.2f')
+    #negative=format(negative,'0.2f')
+    #neutral=format(neutral,'0.2f')
 
     '''
         Check the polarity of the Topic
