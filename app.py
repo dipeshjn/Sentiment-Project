@@ -77,11 +77,11 @@ def predict():
         Check the polarity of the Topic
     '''
     if(polarity == 0.00):
-      output="Neutral"
+      output=neutral
     elif(polarity < 0.00):
-      output="Negative"
+      output=negative
     elif(polarity > 0.00):
-      output="Positive"
+      output=positive
     '''
         Now Return the output to the Front end
     '''
