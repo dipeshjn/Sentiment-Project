@@ -90,7 +90,8 @@ def predict():
     '''
         Now Return the output to the Front end
     '''
-    return render_template('index.html', prediction_text='Overall Result : {}'.format(res))
+    for key, value in res.items():
+      return render_template('index.html', prediction_text='Overall Result : {}'.format(key,value))
 
 if __name__ == "__main__":
     app.run(debug=True)
